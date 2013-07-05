@@ -1,0 +1,57 @@
+/* =============================================================================
+   Box Sizing
+   Apply a natural box layout model to all elements - http://paulirish.com/2012/box-sizing-border-box-ftw/
+   border-box polyfill for IE 6/7: https://github.com/Schepp/box-sizing-polyfill#readme
+   ========================================================================== */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;  *behavior: url(boxsizing.htc); }
+
+
+/* Site Styles */
+
+body{
+  border: 5px solid #ff0066;
+}
+
+/* #main{ */
+/* } */
+
+#contact{
+  background: url('../../img/contact.png') no-repeat;
+  background-size: cover;
+  height:560px;
+}
+
+.layer{
+  padding:0;
+}
+/* H2's suck */
+h2{
+  margin: 0;
+}
+
+.inner{
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 65px;
+  color: white;
+  font-family: 'Univers LT Std';
+}
+
+.inner h2{
+  font-size: 2.75em;
+  font-family: 'Clarendon BT', serif;
+  font-weight: bold;
+}
+.inner a{
+  text-decoration: none;
+  color: white;
+}
+
+#contact ul {
+    display: inline;
+    list-style: none;
+}
+#contact li {
+    float:  left;
+    margin-right: 20px;
+}
