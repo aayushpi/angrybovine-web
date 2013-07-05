@@ -824,10 +824,6 @@ body{
   background: url('../../img/approach.png') no-repeat;
   background-size: cover;
 }
-/* #contact{ */
-/*   background: url('../../img/contact.png') no-repeat; */
-/*   background-size: cover; */
-/* } */
 
 .layer{
   padding:0;
@@ -907,4 +903,23 @@ h2{
   right: 90px;
   line-height: 28px;
   text-align: right;
+}
+
+#work h2 {
+  font-size: 2.375em;
+  width: 506px;
+  line-height: 37px;
+  font-family: 'Clarendon BT', serif;
+}
+
+#triangle {
+  width: 0;
+  height: 0;
+  border-right: 1195px solid transparent;
+  border-top: 782px solid black;
+  border-left: 0 solid black;
+  border-bottom: 50px solid transparent;
+  position: absolute;
+  z-index: -1;
+  top: 1680px;
 }
