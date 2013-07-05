@@ -23,10 +23,10 @@ body{
   background: url('../../img/about.png') no-repeat;
   background-size: cover;
 }
-/* #contact{ */
-/*   background: url('../../img/contact.png') no-repeat; */
-/*   background-size: cover; */
-/* } */
+#approach{
+  background: url('../../img/approach.png') no-repeat;
+  background-size: cover;
+}
 /* #contact{ */
 /*   background: url('../../img/contact.png') no-repeat; */
 /*   background-size: cover; */
@@ -65,10 +65,49 @@ h2{
 }
 
 #contact ul {
-    display: inline;
-    list-style: none;
+  display: inline;
+  list-style: none;
 }
 #contact li {
-    float:  left;
-    margin-right: 20px;
+  float:  left;
+  margin-right: 20px;
+}
+
+.circle {
+  width: 240px;
+  height: 240px;
+  background-color: white;
+  background-color: rgba(255,255,255,0.44);
+  border-radius: 120px;
+  float: left;
+}
+#graze, #expel {
+  margin-left: -50px;
+}
+.circle h3 {
+  font-size: 2.375em;
+  font-family: 'Clarendon BT', serif;
+  color: black;
+  font-weight: bold;
+  margin-left: 56px;
+  margin-top: 70px;
+  margin-bottom: 0;
+}
+.circle ul {
+  list-style: none;
+  margin-left: -36px;
+  text-align: center;
+}
+
+#tyson {
+  position: absolute;
+  top: 1170px;
+  font-size: 1.625em;
+  font-family: 'Clarendon BT', serif;
+  font-weight: bold;
+  color: #ff0066;
+  width: 480px;
+  right: 90px;
+  line-height: 28px;
+  text-align: right;
 }
