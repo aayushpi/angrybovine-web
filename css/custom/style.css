@@ -18,11 +18,24 @@ body{
 #contact{
   background: url('../../img/contact.png') no-repeat;
   background-size: cover;
-  height:560px;
 }
+#about{
+  background: url('../../img/about.png') no-repeat;
+  background-size: cover;
+}
+/* #contact{ */
+/*   background: url('../../img/contact.png') no-repeat; */
+/*   background-size: cover; */
+/* } */
+/* #contact{ */
+/*   background: url('../../img/contact.png') no-repeat; */
+/*   background-size: cover; */
+/* } */
 
 .layer{
   padding:0;
+  border-bottom: 10px solid black;
+  height:560px;
 }
 /* H2's suck */
 h2{
@@ -45,6 +58,10 @@ h2{
 .inner a{
   text-decoration: none;
   color: white;
+}
+
+.inner p{
+  width: 640px;
 }
 
 #contact ul {
