@@ -1,8 +1,16 @@
 /**
  * scripts.js
  */
-// (function($) {
+(function($) {
+$('.portfolio').masonry({
+    columnWidth: 300,
+    gutter: 10,
+    itemSelector: '.item'
+});
+}(jQuery));
 
-// your code here
 
-// }(jQuery));
+
+
+
+

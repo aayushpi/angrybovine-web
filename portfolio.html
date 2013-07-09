@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>angry+bovine</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <!-- Minified CSS -->
+  <!-- <link href="css/min/styles.min.css" rel="stylesheet" /> -->
+  <!-- Optionally use the non-minified CSS for development -->
+  <!-- <link href="css/libs/z.styles.concat.css" rel="stylesheet" /> -->
+
+  <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <!-- Optionally use Modernizr without Respond.js -->
+  <!-- <script src="js/vendor/modernizr-2.6.2.js"></script> -->
+  <style>
+  .item img{
+    margin: 0 auto 10px auto;
+  }
+  </style>
+</head>
+<body>
+<div class="portfolio">
+  <div class="item">
+    <img src="/img/feature.png">
+  </div>
+  <div class="item">
+    <img src="/img/tall_size.png">
+  </div>
+  <div class="item">
+    <img src="/img/regular_size.png">
+  </div>
+  <div class="item">
+    <img src="/img/regular_size.png">
+  </div>
+  <div class="item">
+    <img src="/img/regular_size.png">
+  </div>
+  <div class="item">
+    <img src="/img/regular_size.png">
+  </div>
+  <div class="item">
+    <img src="/img/regular_size.png">
+  </div>
+  <div class="item">
+    <img src="/img/tall_size.png">
+  </div>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!-- <script src="/js/vendor/isotope.min.js"></script> -->
+<script src="/js/vendor/masonry.pkgd.min.js"></script>
+<script>
+$('.portfolio').masonry({
+  columnWidth: 300,
+  gutter: 10,
+  itemSelector: '.item'
+});
+</script>
+</body>
+</html>
