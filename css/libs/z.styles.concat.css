@@ -805,6 +805,39 @@ textarea {
 
 body{
   border: 5px solid #ff0066;
+  /* opacity: 0; */
+}
+#top{
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  background-color: rgba(0,0,0,0.8);
+  margin: -5px -5px;
+  z-index: 10;
+}
+#top div{
+  margin: 0 auto;
+  width: 960px;
+}
+#top div h1 {
+  width: 130px;
+  height: 23px;
+  text-indent: -9001em;
+  background: url('http://aayushis.in/bovine/img/bovine_wordmark.png') no-repeat;
+}
+
+#top div nav ul{
+  color: #ff0066;
+  font-family: "Univers LT Std", sans-serif;
+  position: relative;
+  top: -59px;
+  right: -140px;
+}
+
+#top div nav ul li, footer > nav ul li{
+  float:left;
+  margin-right:20px;
 }
 
 #contact{
@@ -820,10 +853,6 @@ body{
   background-size: cover;
 }
 
-#contact, #about, #approach{
-  opacity: 0;
-}
-
 .layer{
   padding:0;
   border-bottom: 10px solid black;
@@ -837,7 +866,7 @@ h2{
 .inner{
   width: 960px;
   margin: 0 auto;
-  padding-top: 65px;
+  padding-top: 105px;
   color: white;
   font-family: 'Univers LT Std';
 }
@@ -893,7 +922,7 @@ h2{
 
 #tyson {
   position: absolute;
-  top: 1170px;
+  top: 1210px;
   font-size: 1.625em;
   font-family: 'Clarendon BT', serif;
   font-weight: bold;
@@ -927,6 +956,11 @@ h2{
   color: #ff0066; font-family: "Univers LT Std", sans-serif; 
   font-size: 0.875em;
   text-decoration: underline;
+}
+
+.portfolio{
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .item{
