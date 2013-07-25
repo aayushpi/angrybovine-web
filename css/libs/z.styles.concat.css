@@ -818,9 +818,9 @@ body{
 }
 #top div{
   margin: 0 auto;
-  width: 960px;
+  width: 90%;
 }
-#top div h1 {
+#top div h1, #logo{
   width: 130px;
   height: 23px;
   text-indent: -9001em;
@@ -864,16 +864,18 @@ h2{
 }
 
 .inner{
-  width: 960px;
+  width: 90%;
   margin: 0 auto;
-  padding-top: 105px;
+  padding-top: 95px;
   color: white;
   font-family: 'Univers LT Std';
 }
 
 .inner h2{
   font-size: 2.75em;
-  font-family: 'Clarendon BT', serif;
+  font-family: ClarendonBT-Bold; 
+	font-weight: normal; 
+	font-style: normal; 
   font-weight: bold;
 }
 .inner a{
@@ -882,7 +884,8 @@ h2{
 }
 
 .inner p{
-  width: 640px;
+  max-width: 640px;
+  width: 90%;
 }
 
 #contact ul {
@@ -907,8 +910,9 @@ h2{
 }
 .circle h3 {
   font-size: 2.375em;
-  font-family: 'Clarendon BT', serif;
-  color: black;
+  font-family: ClarendonBT-Bold; 
+	font-weight: normal; 
+	font-style: normal;   color: black;
   font-weight: bold;
   margin-left: 56px;
   margin-top: 70px;
@@ -924,8 +928,9 @@ h2{
   position: absolute;
   top: 1210px;
   font-size: 1.625em;
-  font-family: 'Clarendon BT', serif;
-  font-weight: bold;
+  font-family: ClarendonBT-Bold; 
+	font-weight: normal; 
+	font-style: normal;   font-weight: bold;
   color: #ff0066;
   width: 480px;
   right: 90px;
@@ -937,8 +942,9 @@ h2{
   font-size: 2.375em;
   width: 506px;
   line-height: 37px;
-  font-family: 'Clarendon BT', serif;
-}
+  font-family: ClarendonBT-Bold; 
+	font-weight: normal; 
+	font-style: normal; }
 
 #triangle {
   width: 0;
@@ -965,6 +971,35 @@ h2{
 
 .item{
   margin-top: 10px;
+}
+
+footer div{
+  float: left;
+}
+
+footer{
+  color: white;
+  background-color: #ff0066;
+  margin-top: 20px;
+}
+
+footer p{
+  margin: 0;
+}
+
+footer ul {
+  list-style: none;
+  display: inline-block;
+  width: 500px;
+  float:  right;
+}
+footer li {
+  float: left;
+  margin-left: 20px;
+}
+
+footer li a{
+  color: white;
 }
 
 /**** Isotope Filtering ****/
