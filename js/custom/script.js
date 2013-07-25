@@ -11,12 +11,13 @@
   }
 
   $(document).ready(function(){
-    jump("work");
-    $('.portfolio').masonry({
+// Fix this
+   var dfd = $.Deferred();
+   dfd.done($('.portfolio').masonry({
         columnWidth: 300,
         gutter: 10,
         itemSelector: '.item'
-    });
+    }), jump("work"));
   });
 
 

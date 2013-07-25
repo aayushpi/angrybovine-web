@@ -8,8 +8,8 @@
 
 body{
   border: 5px solid #ff0066;
-  /* opacity: 0; */
 }
+
 #top{
   position: fixed;
   width: 100%;
@@ -62,7 +62,7 @@ body{
   border-bottom: 10px solid black;
   height:560px;
 }
-/* H2's suck */
+
 h2{
   margin: 0;
 }
