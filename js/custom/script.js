@@ -2,10 +2,9 @@
  * scripts.js
  */
 (function($) {
-  
   function jump(dradis){
     $('html,body').animate({
-      scrollTop: $("#"+dradis).offset().top},
+      scrollTop: $(dradis).offset().top},
       '500', function(){
     });
   }
@@ -17,14 +16,26 @@
         columnWidth: 300,
         gutter: 10,
         itemSelector: '.item'
-    }), jump("work"));
+    }), jump("#work"));
   });
 
-
+  $('#top div h1').click(function(){ $('html,body').animate({
+      scrollTop: $("#work").offset().top},
+      '500', function(){
+    });
+  });
 
   $('#top nav ul li').click(function(){
-    var coord= $(this).html();
+    var coord = "#" + $(this).html();
+    if (coord === "work"){
+      coord = ".portfolio";
+    }
     jump(coord);
+  });
+
+  $('.burger').click(function(){
+    $('#top').animate({height:'140px'});
+    $('#top div nav ul').animate({top:'-60px'});
   });
 
 }(jQuery));
