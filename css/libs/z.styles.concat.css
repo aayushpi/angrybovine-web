@@ -981,13 +981,15 @@ h2{
 
 #detail{
   position: absolute;
-  background-color: #FF0066;
+  background-color: #111;
   width: 100%;
   display: none;
+  margin: -5px -5px;
 }
 #detail h1 {
     font-family: ClarendonBT-Bold;
     color: white;
+    font-size: 1.5em;
 }
 #detail > div {
     width: 90%;
@@ -1000,13 +1002,18 @@ h2{
 }
 
 #detail div #info{
-  width: 400px;
+  width: 250px;
   float: left;
+}
+
+#info span a{
+  color: #FF0066;
+  cursor: pointer;
 }
 
 #gallery{
   float: left;
-  margin-left: 20px;
+  margin-left: 50px;
 }
 
 #gallery img{

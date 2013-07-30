@@ -41,6 +41,19 @@
       $('#detail').fadeIn(1000);
     });
   });
+  $('#info span a').click(function(){
+    var x = $(this).data('val');
+    var y = $('#gallery img').data('count');
+    if (y === 12 && x === 1){
+      y = 1;
+    } else if(y === 1 && x === -1){
+      y = 12;
+    }
+    var z = x+y;
+    $('#gallery img').data('count', z);
+    var images=['/img/vendavo_01.jpg','/img/vendavo_02.jpg','/img/vendavo_03.jpg','/img/vendavo_04.jpg','/img/vendavo_05.jpg','/img/vendavo_06.jpg','/img/vendavo_07.jpg','/img/vendavo_08.jpg','/img/vendavo_09.jpg','/img/vendavo_10.jpg','/img/vendavo_11.jpg','/img/vendavo_12.jpg'];
+    $('#gallery img').attr('src', images[z]);
+  });
 
   $('.burger').click(function(){
     $('#top').animate({height:'140px'});
