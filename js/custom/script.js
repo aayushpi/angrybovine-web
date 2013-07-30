@@ -33,6 +33,15 @@
     jump(coord);
   });
 
+  $('.item img').click(function(){
+    var x = $(this).offset();
+    // var y = $(this).css('height');
+    $('#detail').fadeOut('fast', function(){
+      $('#detail').css({'top': x.top});
+      $('#detail').fadeIn(1000);
+    });
+  });
+
   $('.burger').click(function(){
     $('#top').animate({height:'140px'});
     $('#top div nav ul').animate({top:'-60px'});

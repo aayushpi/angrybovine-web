@@ -979,6 +979,40 @@ h2{
   margin-top: 10px;
 }
 
+#detail{
+  position: absolute;
+  background-color: #FF0066;
+  width: 100%;
+  display: none;
+}
+#detail h1 {
+    font-family: ClarendonBT-Bold;
+    color: white;
+}
+#detail > div {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 960px;
+}
+#detail h2 {
+    color: white;
+    font-size: 1em;
+}
+
+#detail div #info{
+  width: 400px;
+  float: left;
+}
+
+#gallery{
+  float: left;
+  margin-left: 20px;
+}
+
+#gallery img{
+  max-height: 400px;
+}
+
 footer div{
   float: left;
   margin-left: 5%;
@@ -1010,6 +1044,10 @@ footer li {
 
 footer li a{
   color: white;
+}
+
+footer .mobile{
+  display: none;
 }
 
 /**** Isotope Filtering ****/
@@ -1083,7 +1121,7 @@ and (max-width : 480px) {
   #work h2{
     color: #FF0066;
     font-size: 2em;
-    width: 420px;
+    width: 340px;
   }
   #triangle{
     display: none;
@@ -1108,6 +1146,19 @@ and (max-width : 480px) {
     display: block;
     cursor: pointer;
   }
+  footer .extended, footer #logo{
+    display: none;
+  }
+  footer .mobile{
+    display: inline;
+    width:100%;
+    float: none;
+    margin-top:20px;
+  }
+  footer .mobile li a img{
+    width: 40px;
+  }
+  /* .burger {display: none;} */
 }
 @media only screen
 and (min-width : 480px)
