@@ -16,7 +16,7 @@
   
   <!-- Optionally use the non-minified CSS for development -->
   <!-- <link href="css/libs/z.styles.concat.css" rel="stylesheet" /> -->
-
+  <script src='https://cdn.firebase.com/v0/firebase.js'></script>
   <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
   <!-- Optionally use Modernizr without Respond.js -->
   <!-- <script src="js/vendor/modernizr-2.6.2.js"></script> -->
@@ -121,14 +121,17 @@
       </div>
     </div>
     <div id="detail">
+      <span class="close">
+        CLOSE &times;
+      </span>
       <div>
+        <div id="gallery">
+          <img src="/img/vendavo_01.jpg" data-count="1">
+        </div>
         <div id="info">
           <h1>Vendavo Rebrand</h1>
           <h2>Vendavo helps companies take profitability to the front lines by delivering simple, actionable and timely guidance that empowers salespeople to close faster, win more and boost margins on every deal. vendavo is the foundation for enterprise profitability.</h2>
           <span><a data-val="-1">prev</a> | <a data-val="1">next</a></span>
-        </div>
-        <div id="gallery">
-          <img src="/img/vendavo_01.jpg" data-count="1">
         </div>
       </div>
     </div>
@@ -154,6 +157,7 @@
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js"></script>
 <script src="/js/vendor/masonry.pkgd.min.js"></script>
 
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
