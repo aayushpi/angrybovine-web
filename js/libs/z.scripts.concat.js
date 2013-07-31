@@ -204,7 +204,10 @@ var data = [ {
     jump(coord);
   });
 
- 
+  $('.close').click(function(){
+    $('#detail').fadeOut(1000);
+  });
+
   $('#info span a').click(function(){
     var x = $(this).data('val');
     var y = $('#gallery img').data('count');
@@ -215,8 +218,6 @@ var data = [ {
     }
     var z = x+y;
     $('#gallery img').data('count', z);
-    var images=['/img/vendavo_01.jpg','/img/vendavo_02.jpg','/img/vendavo_03.jpg','/img/vendavo_04.jpg','/img/vendavo_05.jpg','/img/vendavo_06.jpg','/img/vendavo_07.jpg','/img/vendavo_08.jpg','/img/vendavo_09.jpg','/img/vendavo_10.jpg','/img/vendavo_11.jpg','/img/vendavo_12.jpg'];
-    // $('#gallery img').attr('src', images[z]);
     $('#gallery img').attr('src', data[0].slides[z-1].image);
     $('#info h2').html(data[0].slides[z-1].caption);
   });
@@ -226,8 +227,8 @@ var data = [ {
     // var y = $(this).css('height');
     $('#detail').fadeOut('fast', function(){
       $('#detail').css({'top': x.top});
-      $('#gallery img').attr('src', data[0].slides[1].image);
-      $('#info h2').html(data[0].slides[1].caption);
+      $('#gallery img').attr('src', data[0].slides[0].image);
+      $('#info h2').html(data[0].slides[0].caption);
       $('#detail').fadeIn(1000);
     });
   });
